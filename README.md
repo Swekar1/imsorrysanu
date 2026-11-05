@@ -1,12 +1,9 @@
 # imsorrysanu
 
-This folder is a standalone GitHub Pages website. Its Pages workflow publishes the `site` folder whenever changes are pushed to `main`.
+**Live website:** https://swekar1.github.io/imsorrysanu/
 
-## Publish it
+Scan the [QR code](./imsorrysanu-qr.png) to open the apology page. The message and website are publicly accessible.
 
-1. Create a **public** GitHub repository named `imsorrysanu` under the `Swekar1` account.
-2. Add the contents of this folder to the repository, including `.github/workflows/deploy-pages.yml`.
-3. In the repository, open **Settings → Pages** and set the source to **GitHub Actions**.
-4. Push the files to the `main` branch and wait for the **Deploy to GitHub Pages** workflow to finish.
+## Website files
 
-The site URL will be <https://swekar1.github.io/imsorrysanu/>. The QR image in this folder links to that address. The page and its personal message will be publicly accessible.
+The static site is made from `index.html`, `styles.css`, and `script.js` in this repository root. GitHub Pages publishes the `main` branch root.
