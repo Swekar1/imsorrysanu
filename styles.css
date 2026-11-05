@@ -1,0 +1,282 @@
+:root {
+  color-scheme: light;
+  font-family: Georgia, "Times New Roman", serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  background: #fff8fb;
+  color: #613b4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+.page {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  overflow: hidden;
+  padding: 2rem 1.25rem;
+}
+
+.apology-page {
+  background:
+    radial-gradient(ellipse at 10% 12%, rgb(255 255 255 / 90%), transparent 34%),
+    radial-gradient(ellipse at 88% 84%, rgb(255 255 255 / 75%), transparent 31%),
+    linear-gradient(135deg, #fff4f8, #ffe2ed 54%, #fff0f5);
+}
+
+.heart-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: repeat;
+}
+
+.pink-hearts {
+  opacity: 0.21;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='96' viewBox='0 0 104 96'%3E%3Ctext x='14' y='34' fill='%23d96b91' font-size='20'%3E%E2%99%A5%3C/text%3E%3Ctext x='67' y='79' fill='%23d96b91' font-size='14'%3E%E2%99%A5%3C/text%3E%3C/svg%3E");
+}
+
+.apology-card {
+  position: relative;
+  width: min(100%, 38rem);
+  padding: clamp(2.5rem, 8vw, 5rem) clamp(1.5rem, 7vw, 4rem);
+  border: 1px solid rgb(255 255 255 / 90%);
+  border-radius: 2rem;
+  background: rgb(255 255 255 / 82%);
+  box-shadow: 0 1.5rem 5rem rgb(157 74 105 / 13%);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: #b65b7d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin: 0;
+  color: #a94368;
+  font-size: clamp(2.7rem, 9vw, 5.2rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.heart-divider {
+  margin: 1.4rem 0 1.8rem;
+  color: #e48aaa;
+  font-size: 1.1rem;
+  letter-spacing: 0.7rem;
+}
+
+.question {
+  margin: 0 0 1.5rem;
+  color: #744557;
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
+}
+
+.choices {
+  position: relative;
+  display: flex;
+  width: min(100%, 30rem);
+  min-height: 15rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.choice-button {
+  min-width: 7.5rem;
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.yes-button {
+  background: #d66f91;
+  color: #fff;
+  box-shadow: 0 0.5rem 1.2rem rgb(193 78 117 / 22%);
+}
+
+.yes-button:hover {
+  transform: translateY(-2px);
+  background: #c65c7f;
+  box-shadow: 0 0.7rem 1.4rem rgb(193 78 117 / 30%);
+}
+
+.no-button {
+  z-index: 1;
+  background: #fff;
+  color: #9c6678;
+  box-shadow: 0 0.3rem 1rem rgb(128 78 95 / 13%);
+}
+
+.choice-button:focus-visible,
+.envelope:focus-visible {
+  outline: 3px solid #845449;
+  outline-offset: 4px;
+}
+
+.hint {
+  min-height: 1.25rem;
+  margin: 1.2rem 0 0;
+  color: #ae7b8d;
+  font-family: system-ui, sans-serif;
+  font-size: 0.83rem;
+}
+
+.letter-page {
+  background:
+    radial-gradient(ellipse at 15% 15%, #f5faf5, transparent 38%),
+    #fff;
+}
+
+.green-hearts {
+  opacity: 0.18;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='100' viewBox='0 0 110 100'%3E%3Ctext x='18' y='39' fill='%232d6747' font-size='21'%3E%E2%99%A5%3C/text%3E%3Ctext x='76' y='83' fill='%232d6747' font-size='16'%3E%E2%99%A5%3C/text%3E%3C/svg%3E");
+}
+
+.letter-content {
+  position: relative;
+  width: min(100%, 43rem);
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 2rem;
+  color: #285d43;
+  font-size: clamp(2rem, 6vw, 3.3rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.envelope {
+  display: grid;
+  width: min(100%, 22rem);
+  min-height: 17rem;
+  justify-items: center;
+  align-content: center;
+  gap: 0.7rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #dce9df;
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, #f8fcf8, #eaf3ec);
+  box-shadow: 0 1.3rem 3.5rem rgb(37 83 57 / 13%);
+  color: #285d43;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.envelope:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1.6rem 3.8rem rgb(37 83 57 / 19%);
+}
+
+.envelope-heart,
+.letter-heart {
+  color: #397c58;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.envelope-label {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.envelope-caption {
+  color: #718b79;
+  font-family: system-ui, sans-serif;
+  font-size: 0.88rem;
+}
+
+.love-letter {
+  width: min(100%, 43rem);
+  margin: 1.5rem auto 0;
+  padding: clamp(1.75rem, 6vw, 3.5rem);
+  border: 1px solid #e0ebe2;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 1.3rem 3.5rem rgb(37 83 57 / 11%);
+  color: #40594a;
+  text-align: left;
+}
+
+.love-letter .letter-heart {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.love-letter p {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.8vw, 1.2rem);
+  line-height: 1.85;
+}
+
+.love-letter .signature {
+  margin-top: 1.4rem;
+  color: #285d43;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: right;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 420px) {
+  .choices {
+    gap: 0.65rem;
+  }
+
+  .choice-button {
+    min-width: 6rem;
+    padding-inline: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

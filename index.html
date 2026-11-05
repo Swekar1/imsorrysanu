@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A little apology, made with love for Sanu.">
+    <title>imsorrysanu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="page apology-page" id="apology-page" aria-labelledby="apology-title">
+        <div class="heart-pattern pink-hearts" aria-hidden="true"></div>
+        <div class="apology-card">
+          <p class="eyebrow">A little note from my heart</p>
+          <h1 id="apology-title">I'm Sorry, Sanu</h1>
+          <div class="heart-divider" aria-hidden="true">♥ ♥ ♥</div>
+          <p class="question">Do you forgive me?</p>
+          <div class="choices" id="choices">
+            <button class="choice-button yes-button" id="yes-button" type="button">Yes</button>
+            <button class="choice-button no-button" id="no-button" type="button">No</button>
+          </div>
+          <p class="hint" id="no-hint" aria-live="polite">The "No" button seems a little shy...</p>
+        </div>
+      </section>
+
+      <section class="page letter-page" id="letter-page" aria-labelledby="letter-heading" hidden>
+        <div class="heart-pattern green-hearts" aria-hidden="true"></div>
+        <div class="letter-content">
+          <p class="eyebrow">For you, Sanu</p>
+          <h2 id="letter-heading" tabindex="-1">A letter from my heart</h2>
+          <button class="envelope" id="open-letter" type="button" aria-expanded="false" aria-controls="love-letter">
+            <span class="envelope-heart" aria-hidden="true">♥</span>
+            <span class="envelope-label">Open your letter</span>
+            <span class="envelope-caption">Made with love, just for you</span>
+          </button>
+          <article class="love-letter" id="love-letter" hidden>
+            <div class="letter-heart" aria-hidden="true">♥</div>
+            <p>I'm really sorry sanu, I know i made you mad but please forgive me. I never wish to see you mad, because its painful for me too when i see that i hurt someone i love alot. I know i'm not perfect but atleast let me try and make you happy because that is what fuels me everyday. Seeing you happy brings happiness to myself. So please forgive me once again sanu.</p>
+            <p class="signature">-Love, Swekar</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
